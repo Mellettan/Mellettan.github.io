@@ -1,0 +1,97 @@
+.login-container {
+    max-width: 400px;
+    margin: 60px auto 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  
+  .login-container h2 {
+    color: #333;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    gap: 30px;
+  }
+  input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
+  
+  input[type="email"], #password, input[type="tel"], #password_ret {
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    color:#333;
+  }
+  .group{
+    position: relative;
+  }
+  .fa-envelope{
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+  }
+  .fa-phone{
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+  }
+  .fa-eye, .fa-eye-slash{
+    position: absolute;
+    right: 7px;
+    bottom: 25px;
+  }
+
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: rgb(22, 152, 192);
+    color: #fff;
+    width: 55%;
+    border: none;
+    margin: 25px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: rgb(18, 119, 150);
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+@media screen and (max-width: 450px) {
+  button {
+    width: 75%;
+    font-size: 14px;
+  }
+}

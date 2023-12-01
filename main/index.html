@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин мороженого</title>
+    <!-- Подключаем стили Slick Carousel -->
+    <link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+        <!-- Подключаем собственные CSS и JS файлы -->
+    <link rel="stylesheet" href="style.css">
+        <!-- Подключаем GoogleFonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="ice-cream-header">
+        <a href="index.html" class="logo">
+            <picture>
+                <source 
+                   media="(min-width: 450px)"
+                   srcset="../img/logo.png">
+                <source 
+                   media="(min-width: 5px)"
+                   srcset="../img/logosolo.png">
+                <img src="../img/logosolo.png" 
+                alt="Frozen Delights">
+             </picture>
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="navigation">
+            <div class="mobile__menu">
+				<div class="menu">
+		            <ul>
+		                <li class="menu-item"><a href="index.html">Главная</a></li>
+                        <li class="menu-item"><a href="../menu/menu.html">Меню</a></li>
+                        <li class="menu-item"><a href="../enter/enter.html">Вход</a></li>
+                        <li class="menu-item"><a href="../reg/reg.html">Регистрация</a></li>
+		            </ul>
+				</div>
+			</div>
+        </nav>
+    </header>
+    
+    <div class="photo-container">
+        <div class="caption_bg_rep">Мороженое делает мир вкуснее!</div>
+    </div>    
+
+    <div class="offer-section">
+        <h2>Наше мороженое</h2>
+        <p>Мы гордимся предоставлением самого свежего и разнообразного ассортимента мороженого для вас.</p>
+        <div class="offer-cards">
+            <div class="offer-card">
+                <h3>Натуральные ингредиенты</h3>
+                <p>Наши рецепты используют только натуральные ингредиенты без искусственных добавок.</p>
+            </div>
+            <div class="offer-card">
+                <h3>Разнообразие вкусов</h3>
+                <p>Мы предлагаем широкий выбор вкусов - от классических до экзотических и сезонных.</p>
+            </div>
+            <div class="offer-card">
+                <h3>Гарантированное качество</h3>
+                <p>Мы стремимся обеспечить высокое качество продукции для наших клиентов на протяжении лет.</p>
+            </div>
+            <div class="offer-card">
+                <h3>Сезонные предложения</h3>
+                <p>У нас всегда есть сезонные и специальные предложения для наших постоянных и новых клиентов.</p>
+            </div>
+        </div>
+    </div>
+    <div class = "carousel_wrapper">
+        <div class="carousel_title">
+            <h2>Угодим каждому!</h2>
+        </div>
+        <div class="carousel">
+            <div>
+                <img src="../img/chocolate.jpg" alt="Шоколадное мороженое">
+                <div class="caption_slide">Шоколад</div>
+            </div>
+            <div>
+                <img src="../img/fistashka.jpg" alt="Фисташковое мороженое">
+                <div class="caption_slide">Фисташка</div>
+            </div>
+            <div>
+                <img src="../img/kitkat.jpg" alt="Кит-Кат мороженое">
+                <div class="caption_slide">Кит-Кат</div>
+            </div>
+            <div>
+                <img src="../img/mango.jpg" alt="Манговое мороженое">
+                <div class="caption_slide">Манго</div>
+            </div>
+            <div>
+                <img src="../img/ruspberry.jpg" alt="Клубничное мороженое">
+                <div class="caption_slide">Клубника</div>
+            </div>
+            <div>
+                <img src="../img/vanil.jpg" alt="Ванильное мороженое">
+                <div class="caption_slide">Ваниль</div>
+            </div>
+            <div>
+                <img src="../img/watermelon.jpg" alt="Арбузное мороженое">
+                <div class="caption_slide">Арбуз</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="special-offers">
+        <h2>Специальные предложения</h2>
+        <div class="offer">
+            <img src="../img/dostavka.png" alt="Бесплатная доставка">
+            <div class="offer-details">
+                <h3>Бесплатная доставка</h3>
+                <p>При заказе от 500 рублей</p>
+            </div>
+        </div>
+        <div class="offer">
+            <img src="../img/fruits.png" alt="Скидка на фруктовые вкусы">
+            <div class="offer-details">
+                <h3>Скидка 20%</h3>
+                <p>На все вкусы фруктового мороженого</p>
+            </div>
+        </div>
+        <div class="offer">
+            <img src="../img/cal.png" alt="День мороженого">
+            <div class="offer-details">
+                <h3 class="req_day">Сегодня</h3>
+                <p>Скидка 15% в честь Дня Мороженого!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="ice-cream-builder">
+        <h2>Собери своё мороженое</h2>
+        <div class="build_wrapper">
+            <div class="btn" onclick="redirectToBuildPage()">
+                <div class="side default-side">Создай собственную композицию! Собери своё уникальное мороженое из трех любимых вкусов и получи 15% скидку на своё творение. 
+                    <br>Открой для себя бесконечные возможности и наслаждайся неповторимым вкусом, созданным тобой для тебя!</div>
+                <div class="side hover-side">Собрать вкус!</div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="footer">
+        <div class="about">
+            <h3>О себе</h3>
+            <ul>
+                <li>Медведев Роман Евгеньевич</li>
+                <li>ИКБО-30-22</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>Юридическим лицам</h3>
+            <ul>
+                <li><a href="#">О сотрудничестве</a></li>
+                <li><a href="#">Поставщикам</a></li>
+                <li><a href="#">Оптовикам</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Обратная связь</h3>
+            <ul>
+                <li><a href="tel:+79264962618">+79264962618</a></li>
+                <li><a href="tel:+79997689001">+79997689001</a></li>
+                <li><a href="mailto:frozen_delights@gmail.com">frozen_delights@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Подключаем стили и скрипты Slick Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="../slick/slick.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

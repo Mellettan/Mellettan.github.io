@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сборка своего мороженого</title>
+    <link rel="stylesheet" href="style_build.css">
+    <link rel="stylesheet" href="../main/style.css">
+            <!-- Подключаем GoogleFonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="ice-cream-header">
+        <a href="../main/index.html" class="logo">
+            <picture>
+                <source 
+                   media="(min-width: 450px)"
+                   srcset="../img/logo.png">
+                <source 
+                   media="(min-width: 5px)"
+                   srcset="../img/logosolo.png">
+                <img src="../img/logosolo.png" 
+                alt="Frozen Delights">
+             </picture>
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="navigation">
+            <div class="mobile__menu">
+				<div class="menu">
+		            <ul>
+		                <li class="menu-item"><a href="../main/index.html">Главная</a></li>
+                        <li class="menu-item"><a href="../menu/menu.html">Меню</a></li>
+                        <li class="menu-item"><a href="../enter/enter.html">Вход</a></li>
+                        <li class="menu-item"><a href="../reg/reg.html">Регистрация</a></li>
+		            </ul>
+				</div>
+			</div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Собери своё мороженое</h1>
+        <div class="flavors">
+            <img src="img_build/apel.png" alt="ап" draggable="true" class="flavor" id="apel">
+            <img src="img_build/choco.png" alt="шок" draggable="true" class="flavor" id="choco">
+            <img src="img_build/caram.png" alt="ка" draggable="true" class="flavor" id="caram">
+            <img src="img_build/klubnika.png" alt="клуб" draggable="true" class="flavor" id="klubnika">
+            <img src="img_build/lemon.png" alt="ли" draggable="true" class="flavor" id="lemon">
+            <img src="img_build/myata.png" alt="мя" draggable="true" class="flavor" id="myata">
+            <img src="img_build/vanilla.png" alt="ва" draggable="true" class="flavor" id="vanilla">
+        </div>
+        <div class="build_zone_wrapper">
+            <div class="dropzone" id="dropzone">Перетащите сюда три вкуса</div>
+            <button id="mixBtn" style="display: none;">Смешать</button>
+            <div id="result"></div>
+            <button id="restartBtn" onclick="redirectToBuildPage()" style="display: none;">Заново</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="about">
+            <h3>О себе</h3>
+            <ul>
+                <li>Медведев Роман Евгеньевич</li>
+                <li>ИКБО-30-22</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>Юридическим лицам</h3>
+            <ul>
+                <li><a href="#">О сотрудничестве</a></li>
+                <li><a href="#">Поставщикам</a></li>
+                <li><a href="#">Оптовикам</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Обратная связь</h3>
+            <ul>
+                <li><a href="tel:+79264962618">+79264962618</a></li>
+                <li><a href="tel:+79997689001">+79997689001</a></li>
+                <li><a href="mailto:frozen_delights@gmail.com">frozen_delights@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script_build.js"></script>
+</body>
+</html>

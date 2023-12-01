@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+    <link rel="stylesheet" href="style_menu.css">
+    <link rel="stylesheet" href="../main/style.css">
+            <!-- Подключаем GoogleFonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30eac09af0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="ice-cream-header">
+        <a href="../main/index.html" class="logo">
+            <picture>
+                <source 
+                   media="(min-width: 450px)"
+                   srcset="../img/logo.png">
+                <source 
+                   media="(min-width: 5px)"
+                   srcset="../img/logosolo.png">
+                <img src="../img/logosolo.png" 
+                alt="Frozen Delights">
+             </picture>
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="navigation">
+            <div class="mobile__menu">
+				<div class="menu">
+		            <ul>
+		                <li class="menu-item"><a href="../main/index.html">Главная</a></li>
+                        <li class="menu-item"><a href="menu.html">Меню</a></li>
+                        <li class="menu-item"><a href="../enter/enter.html">Вход</a></li>
+                        <li class="menu-item"><a href="../reg/reg.html">Регистрация</a></li>
+		            </ul>
+				</div>
+			</div>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="itemT double-col">
+            <img class="item_image" src="../builder/img_build/apel.png" alt="Апельсиновое мороженое">
+            <div class="item_text">Апельсиновое мороженое</div>
+            <div class="item_cost">160₽</div>
+        </div>
+        <div class="itemT double-row">
+            <img class="item_image" src="../builder/img_build/choco.png" alt="Шоколадное мороженое">
+            <div class="item_text">Шоколадное мороженое</div>
+            <div class="item_cost">130₽</div>
+        </div>
+        <div class="itemT">
+            <img class="item_image" src="../builder/img_build/vanilla.png" alt="Ванильное мороженое">
+            <div class="item_text">Ванильное мороженое</div>
+            <div class="item_cost">130₽</div>
+        </div>
+        <div class="itemT double-row">
+            <img class="item_image" src="../builder/img_build/lemon.png" alt="Лимонное мороженое">
+            <div class="item_text">Лимонное мороженое</div>
+            <div class="item_cost">160₽</div>
+        </div>
+        <div class="itemT">
+            <img class="item_image" src="../builder/img_build/myata.png" alt="Мятное мороженое">
+            <div class="item_text">Мятное мороженое</div>
+            <div class="item_cost">160₽</div>
+        </div>
+        <div class="itemT">
+            <img class="item_image" src="../builder/img_build/caram.png" alt="Карамельное мороженое">
+            <div class="item_text">Карамельное мороженое</div>
+            <div class="item_cost">180₽</div>
+        </div>
+        <div class="itemT double-col">
+            <img class="item_image" src="../builder/img_build/klubnika.png" alt="Клубничное мороженое">
+            <div class="item_text">Клубничное мороженое</div>
+            <div class="item_cost">160₽</div>
+        </div>
+        <div class="itemT">
+            <img class="item_image" src="../builder/img_build/vishnya.png" alt="Вишнёвое мороженое">
+            <div class="item_text">Вишнёвое мороженое</div>
+            <div class="item_cost">180₽</div>
+        </div>
+    </div>
+
+    <div id="basket" class="basket__container">
+        <h2 class="basket__title">Корзина</h2>
+        <button class="basket__order-button">
+            Заказать
+        </button>
+        <button class="basket__clear-button">
+            Очистить корзину
+        </button>
+        <span class="basket__total">Итого: 0₽</span>
+        <div class="basket__sort">
+            <button class="basket__sort-asc">
+                <img src="img_menu/sortup.png" width = "24" alt="" />
+            </button>
+            <button class="basket__sort-desc">
+                <img src="img_menu/sortdown.png" width = "24" alt="" />
+            </button>
+        </div>
+        <button class="basket__filter">
+            <i class="fa-solid fa-filter icons"></i>
+        </button>
+		<input type="text" class = "start" placeholder="От">
+		<input type="text" class = "end" placeholder="До">
+    </div>
+
+    <div class="footer">
+        <div class="about">
+            <h3>О себе</h3>
+            <ul>
+                <li>Медведев Роман Евгеньевич</li>
+                <li>ИКБО-30-22</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>Юридическим лицам</h3>
+            <ul>
+                <li><a href="#">О сотрудничестве</a></li>
+                <li><a href="#">Поставщикам</a></li>
+                <li><a href="#">Оптовикам</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Обратная связь</h3>
+            <ul>
+                <li><a href="tel:+79264962618">+79264962618</a></li>
+                <li><a href="tel:+79997689001">+79997689001</a></li>
+                <li><a href="mailto:frozen_delights@gmail.com">frozen_delights@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+  <script src="script_menu.js"></script>
+</body>
+</html>

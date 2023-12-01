@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style_reg.css">
+    <link rel="stylesheet" href="../main/style.css">
+            <!-- Подключаем GoogleFonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/30eac09af0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="ice-cream-header">
+        <a href="../main/index.html" class="logo">
+            <picture>
+                <source 
+                   media="(min-width: 450px)"
+                   srcset="../img/logo.png">
+                <source 
+                   media="(min-width: 5px)"
+                   srcset="../img/logosolo.png">
+                <img src="../img/logosolo.png" 
+                alt="Frozen Delights">
+             </picture>
+        </a>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="navigation">
+            <div class="mobile__menu">
+				<div class="menu">
+		            <ul>
+		                <li class="menu-item"><a href="../main/index.html">Главная</a></li>
+                        <li class="menu-item"><a href="../menu/menu.html">Меню</a></li>
+                        <li class="menu-item"><a href="../enter/enter.html">Вход</a></li>
+                        <li class="menu-item"><a href="reg.html">Регистрация</a></li>
+		            </ul>
+				</div>
+			</div>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <h2>Регистрация</h2>
+        <form class="login-form">
+            <div class="group">
+                <input type="email" id="email" name="email" required placeholder="Почта">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="group">
+                <input type="tel" id="phone" name="phone" required placeholder="+7-123-456-78-90">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="group">
+                <input type="password" id="password" name="password" required placeholder="Пароль">
+                <i class="fa-solid fa-eye-slash controller"></i>
+            </div>
+            <div class="group">
+                <input type="password" id="password_ret" name="password_ret" required placeholder="Повторите пароль">
+                <i class="fa-solid fa-eye-slash controller"></i>
+            </div>
+            <button type="submit">Зарегистрироваться</button>
+        </form>
+    </div>      
+
+    <div class="footer">
+        <div class="about">
+            <h3>О себе</h3>
+            <ul>
+                <li>Медведев Роман Евгеньевич</li>
+                <li>ИКБО-30-22</li>
+            </ul>
+        </div>
+        <div class="links">
+            <h3>Юридическим лицам</h3>
+            <ul>
+                <li><a href="#">О сотрудничестве</a></li>
+                <li><a href="#">Поставщикам</a></li>
+                <li><a href="#">Оптовикам</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>Обратная связь</h3>
+            <ul>
+                <li><a href="tel:+79264962618">+79264962618</a></li>
+                <li><a href="tel:+79997689001">+79997689001</a></li>
+                <li><a href="mailto:frozen_delights@gmail.com">frozen_delights@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+
+  <script src="script_reg.js"></script>
+</body>
+</html>

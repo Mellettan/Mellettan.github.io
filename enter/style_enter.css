@@ -1,0 +1,128 @@
+.login-container {
+    max-width: 400px;
+    margin: 60px auto 100px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.0);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+  
+  .login-container h2 {
+    color: #333;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    gap: 30px;
+  }
+  input[type=password]::-ms-reveal,
+input[type=password]::-ms-clear
+{
+    display: none;
+}
+  
+  input[type="email"], #password {
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 18px;
+    color:#333;
+  }
+  .group{
+    position: relative;
+  }
+  .fa-envelope{
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+  }
+  .fa-eye, .fa-eye-slash{
+    position: absolute;
+    right: 7px;
+    bottom: 25px;
+  }
+
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    outline: none;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: rgb(22, 152, 192);
+    color: #fff;
+    width: 50%;
+    border: none;
+    margin: 25px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgb(18, 119, 150);
+  }
+  
+  .social-buttons {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.social-buttons-block {
+	text-align: center;
+	color: #fff;
+}
+.social-title{
+    margin: 0 -38px 0 0;
+}
+.buttons {
+    width: 40px;
+    height: 40px;
+    background: #000000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    margin: 0 8px;
+    overflow: hidden;
+}
+
+/* Градиентный эффект при наведении */
+.buttons::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 105%;
+    height: 105%;
+    background: linear-gradient(to bottom, #6be9ff, #6da0ff);
+    z-index: 1;
+    transition: all 0.7s ease;
+}
+
+
+.buttons:hover::before {
+    top:0;
+}
+
+.button-icon{
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: #e0f2e5;
+    z-index: 2;
+}
