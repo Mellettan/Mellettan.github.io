@@ -124,11 +124,11 @@ function updateTotal() {
         sum += parseFloat(child.querySelector('.' + 'item__price').textContent);
     }
 
-    total.textContent = `Общая сумма: ${sum}₽`;
+    total.textContent = `Итого: ${sum}₽`;
 }
 
 orderButton.addEventListener('click', () => {
-    alert(`Ваш заказ на сумму ${total.textContent.slice(13)} успешно произведён!`);
+    alert(`Ваш заказ на сумму ${total.textContent.slice(7)} успешно произведён!`);
 });
 
 // Функция для проверки, содержится ли товар уже в корзине

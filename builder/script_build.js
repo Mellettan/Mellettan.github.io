@@ -7,6 +7,17 @@ document.querySelectorAll('.flavor').forEach(flavor => {
     flavor.addEventListener('dragstart', function(event) {
         event.dataTransfer.setData('text/plain', event.target.id);
     });
+    flavor.addEventListener('click', function(event) {
+        if (!flavor.classList.contains('dropped') && draggedCount < 3) {
+            draggedCount++;
+            flavor.classList.add('dropped');
+            dropzone.appendChild(flavor);
+    
+            if (draggedCount === 3) {
+                mixBtn.style.display = 'block';
+            }
+        }
+    });
 });
 
 dropzone.addEventListener('dragover', function(event) {
