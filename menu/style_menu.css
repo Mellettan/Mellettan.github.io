@@ -12,7 +12,7 @@
     gap: .8rem;
 
     position: relative;
-	
+	user-select: none;
 	backdrop-filter: brightness(110%);
 }
 

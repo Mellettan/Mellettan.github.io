@@ -69,6 +69,7 @@ input[type=password]::-ms-clear
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    user-select: none;
   }
   
   button:hover {
@@ -85,6 +86,7 @@ input[type=password]::-ms-clear
 .social-buttons-block {
 	text-align: center;
 	color: #fff;
+  user-select: none;
 }
 .social-title{
     margin: 0 -38px 0 0;
